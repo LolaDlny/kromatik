@@ -182,3 +182,136 @@
     color: #666;
     font-size: 14px;
 }
+
+@media (max-width: 768px) {
+    .contact-page {
+        padding: 80px 15px 20px;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .contact-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        max-height: calc(100vh - 120px);
+        overflow-y: auto;
+    }
+
+    .contact-title {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    /* Formulaire TRÈS COMPACT */
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .form-label {
+        font-size: 0.7rem;
+        margin-bottom: 5px;
+    }
+
+    .form-input,
+    .form-textarea {
+        padding: 8px 10px;
+        font-size: 0.75rem;
+    }
+
+    /* Textarea réduit pour tenir à l'écran */
+    .form-textarea {
+        min-height: 60px;
+        max-height: 80px;
+    }
+
+    .submit-container {
+        margin-top: 15px;
+    }
+
+    .submit-btn {
+        font-size: 0.65rem;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .alert {
+        font-size: 0.75rem;
+        padding: 10px 12px;
+        margin-bottom: 15px;
+    }
+
+    .error-message {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-page {
+        padding: 75px 10px 15px;
+    }
+
+    .contact-container {
+        padding: 12px;
+    }
+
+    .contact-title {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-label {
+        font-size: 0.65rem;
+    }
+
+    .form-input,
+    .form-textarea {
+        font-size: 0.7rem;
+        padding: 7px 8px;
+    }
+
+    .form-textarea {
+        min-height: 50px;
+        max-height: 70px;
+    }
+
+    .submit-btn {
+        font-size: 0.6rem;
+        padding: 8px 15px;
+        letter-spacing: 1px;
+    }
+}
+
+/* Mode paysage - ultra compact */
+@media (max-height: 600px) {
+    .contact-title {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .form-group {
+        margin-bottom: 8px;
+    }
+
+    .form-label {
+        font-size: 0.6rem;
+        margin-bottom: 3px;
+    }
+
+    .form-input {
+        padding: 6px 8px;
+    }
+
+    .form-textarea {
+        min-height: 40px;
+        max-height: 50px;
+    }
+
+    .submit-btn {
+        padding: 6px 12px;
+    }
+}
