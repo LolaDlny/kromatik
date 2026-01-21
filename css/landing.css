@@ -53,8 +53,7 @@ html, body {
 }
 
 .hero-title {
-    font-family: 'Planet Kosmos', sans-serif;
-    src: url('../fonts/planet-kosmos.ttf') format('truetype');
+    font-family: 'Planet Kosmos';
     font-size: 6rem;
     text-shadow: 0 0 10px #0ff, 0 0 20px #f0f, 0 0 30px #0ff;
     margin-bottom: 20px;

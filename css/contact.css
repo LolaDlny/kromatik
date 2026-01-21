@@ -17,8 +17,7 @@
 }
 
 .contact-title {
-    font-family: 'Planet Kosmos', sans-serif;
-    src: url('../fonts/planet-kosmos.ttf') format('truetype');
+    font-family: 'Planet Kosmos';
     font-size: 2rem;
     text-align: center;
     text-shadow: 0 0 10px #f0f;
@@ -182,115 +181,4 @@
     text-align: center;
     color: #666;
     font-size: 14px;
-}
-
-/* =========================
-   RESPONSIVE MOBILE
-========================= */
-@media (max-width: 768px) {
-    .contact-page {
-        padding: 100px 20px 60px;
-    }
-
-    .contact-container {
-        width: 100%;
-        max-width: 100%;
-        padding: 25px;
-    }
-
-    .contact-title {
-        font-size: 1.6rem;
-        margin-bottom: 25px;
-    }
-
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-    .form-label {
-        font-size: 0.85rem;
-        margin-bottom: 8px;
-    }
-
-    .form-input,
-    .form-textarea {
-        padding: 12px;
-        font-size: 0.85rem;
-    }
-
-    .form-textarea {
-        min-height: 120px;
-    }
-
-    .submit-btn {
-        font-size: 0.75rem;
-        padding: 12px 25px;
-        width: 100%;
-    }
-
-    .alert {
-        font-size: 0.85rem;
-        padding: 12px 15px;
-    }
-
-    .error-message {
-        font-size: 0.75rem;
-    }
-
-    /* Email template mobile */
-    .email-container {
-        margin: 20px auto;
-    }
-
-    .email-header {
-        padding: 20px;
-    }
-
-    .email-header h1 {
-        font-size: 20px;
-    }
-
-    .email-body {
-        padding: 20px;
-    }
-
-    .email-value {
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    .email-footer {
-        padding: 15px;
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact-page {
-        padding: 90px 15px 50px;
-    }
-
-    .contact-container {
-        padding: 20px;
-    }
-
-    .contact-title {
-        font-size: 1.4rem;
-    }
-
-    .form-label {
-        font-size: 0.8rem;
-    }
-
-    .form-input,
-    .form-textarea {
-        font-size: 0.8rem;
-        padding: 10px;
-    }
-
-    .submit-btn {
-        font-size: 0.7rem;
-        padding: 10px 20px;
-        letter-spacing: 1px;
-    }
 }

@@ -14,8 +14,7 @@
 }
 
 .apropos > h2 {
-    font-family: 'Planet Kosmos', sans-serif;
-    src: url('../fonts/planet-kosmos.ttf') format('truetype');
+    font-family: 'Planet Kosmos';
     font-size: 2rem;
     text-shadow: 0 0 10px #f0f;
     margin-top: 70px;
