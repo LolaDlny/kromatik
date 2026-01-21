@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Lola Delannoy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{-- Google Fonts --}}
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/show-projets.css">
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Kromatik" />
+    <link rel="manifest" href="images/site.webmanifest" />
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <a href="home.html" class="logo chrome glitch">
+            <img src="images/kromatik_simple.png" alt="Logo Kromatik">
+        </a>
+        <nav class="site-nav">
+            <a href="projets.html">Projets</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<nav class="breadcrumb">
+    <a href="home.html" class="breadcrumb-item">Accueil</a>
+    <span class="breadcrumb-separator">/</span>
+    <a href="projets.html" class="breadcrumb-item">Projets</a>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-current" id="breadcrumb-title"></span>
+</nav>
+
+
+    <section class="horizontal project-view">
+        <div class="project-card">
+            <div class="project-cover">
+                <img id="projet-cover" src="" alt="">
+            </div>
+            <div class="project-info">
+                <h1 id="projet-title"></h1>
+                <span class="project-meta" id="projet-meta"></span>
+                <p id="projet-description"></p>
+                <div id="projet-outils-container"></div>
+                <div class="project-navigation">
+                    <a href="projets.html" class="back-link">← retour</a>
+
+                    <a id="prev-project" class="back-link" style="display: none;">
+                        ← projet précédent
+                    </a>
+
+                    <a id="next-project" class="back-link" style="display: none;">
+                        projet suivant →
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        
+        <section class="project-media" id="projet-media">
+            <!-- Les médias seront injectés ici -->
+        </section>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" style="display: none;">
+        <span class="lightbox-close" onclick="closeLightbox()">×</span>
+        <span class="lightbox-arrow lightbox-arrow-left" onclick="changeLightboxImage(-1)">‹</span>
+        <span class="lightbox-arrow lightbox-arrow-right" onclick="changeLightboxImage(1)">›</span>
+        <div class="lightbox-content" id="lightbox-content"></div>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+
+    <footer class="ui-footer">
+        <p>© 2025 Lola Delannoy. Tous droits réservés.</p>
+        <a href="https://www.instagram.com/kromatik_production?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-square-linkedin"></i></a>
+        <a href="documents/CV.pdf"><i class="fa-regular fa-file"></i></a>
+    </footer>
+
+    <script src="js/background-animation.js"></script>
+    <script src="js/horizontal-scroll.js"></script>
+    <script src="js/projets-data.js"></script>
+    <script src="js/show-projet.js"></script>
+</body>
+</html>

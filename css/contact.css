@@ -1,0 +1,184 @@
+.contact-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 5vw 80px;
+}
+
+.contact-container {
+    max-width: 800px;
+    width: 50%;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(0,255,255,0.02);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px #0ff, 0 0 20px #f0f, 0 0 30px #0ff;
+}
+
+.contact-title {
+    font-family: 'Planet Kosmos', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0 0 10px #f0f;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(237, 135, 237);
+    text-shadow: 0 0 5px #f0f;
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px 15px;
+    background: rgba(123, 189, 255, 0.05);
+    border: 1px solid rgb(123, 189, 255);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: rgb(237, 135, 237);
+    box-shadow: 0 0 15px rgb(237, 135, 237);
+    background: rgba(123, 189, 255, 0.05);
+}
+
+.form-textarea {
+    min-height: 55px;
+    resize: none;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: rgba(255,255,255,0.3);
+}
+
+.submit-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    color: rgb(123, 189, 255);
+    border: 2px solid rgb(123, 189, 255);
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    background-color: rgba(0,255,255,0.01);
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    color: rgb(237, 135, 237);
+    border: 2px solid rgb(237, 135, 237);
+    box-shadow: 0 0 30px rgb(237, 135, 237);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.alert {
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+.alert-success {
+    background: rgba(0,255,150,0.1);
+    border: 1px solid rgba(0,255,150,0.4);
+    color: rgb(0,255,150);
+    text-shadow: 0 0 10px rgba(0,255,150,0.5);
+}
+
+.alert-error {
+    background: rgba(255,50,50,0.1);
+    border: 1px solid rgba(255,50,50,0.4);
+    color: rgb(255,100,100);
+    text-shadow: 0 0 10px rgba(255,50,50,0.5);
+}
+
+.error-message {
+    color: rgb(255,100,100);
+    font-size: 0.85rem;
+    margin-top: 8px;
+    text-shadow: 0 0 5px rgba(255,50,50,0.5);
+}
+
+/* =========================
+   EMAIL TEMPLATE
+========================= */
+.email-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.email-header {
+    background: linear-gradient(135deg, #7bbdff, #ed87ed);
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.email-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.email-body {
+    padding: 30px;
+    color: #333;
+}
+
+.email-field {
+    margin-bottom: 20px;
+}
+
+.email-label {
+    font-weight: bold;
+    color: #7bbdff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.email-value {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 3px solid #7bbdff;
+}
+
+.email-footer {
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}

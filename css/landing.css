@@ -1,0 +1,109 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* scroll horizontal seulement */
+    font-family: 'Orbitron', sans-serif;
+    background: #03030a; /* bleu nuit très foncé */
+    background-image: 
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 1px, transparent 1px, transparent 40px),
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 1px, transparent 1px, transparent 40px);
+    background-size: 40px 40px; /* taille des cellules de la grille */
+    color: white;
+}
+
+/* =========================
+   MAIN HERO
+========================= */
+.landing-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.landing-frame {
+    padding: 150px 350px;
+    border: 3px solid white;
+    border-radius: 20px;
+    display: inline-block;
+    box-shadow: 0 0 20px rgb(123, 189, 255);
+}
+
+.logo img {
+    height: 250px;
+    width: auto;
+    filter: drop-shadow(0 0 2px #0ff) drop-shadow(0 0 2px rgb(237, 135, 237)) drop-shadow(0 0 20px rgb(123, 189, 255));
+    transition: filter 0.3s ease;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.hero-title {
+    font-family: 'Planet Kosmos', sans-serif;
+    font-size: 6rem;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #f0f, 0 0 30px #0ff;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: rgb(237,135,237);
+    text-shadow: 0 0 30px #f0f;
+    margin-bottom: 40px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.enter-button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(123, 189, 255);
+    border: 2px solid rgb(123, 189, 255);
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.enter-button:hover {
+    background: rgb(123, 189, 255);
+    color: #03030a;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #f0f, 0 0 30px #0ff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .landing-header .logo {
+        font-size: 2rem;
+    }
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .enter-button {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+}

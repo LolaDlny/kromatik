@@ -1,0 +1,340 @@
+/* =========================
+   RESET & BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Orbitron', sans-serif;
+    background: #03030a;
+    background-image: 
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 1px, transparent 1px, transparent 40px),
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.1) 0, rgba(255,255,255,0.1) 1px, transparent 1px, transparent 40px);
+    background-size: 40px 40px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   HEADER
+========================= */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5vw;
+    background: #03030a;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 10px #0ff, 0 0 20px #f0f, 0 0 20px #0ff;
+}
+
+.header-inner {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    filter: drop-shadow(0 0 2px #0ff) drop-shadow(0 0 2px rgb(237, 135, 237)) drop-shadow(0 0 15px rgb(123, 189, 255));
+    transition: filter 0.3s ease;
+}
+
+.logo img:hover {
+    filter: drop-shadow(0 0 10px #0ff) drop-shadow(0 0 15px #f0f) drop-shadow(0 0 20px #0ff);
+}
+
+.site-nav a {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: rgb(237, 135, 237);
+    text-decoration: none;
+    margin-left: 30px;
+    position: relative;
+    transition: color 0.3s, text-shadow 0.3s;
+    text-shadow: 0 0 10px #f0f, 0 0 20px #0ff, 0 0 30px #f0f;
+}
+
+.site-nav a:hover {
+    color: rgb(123, 189, 255);
+    text-shadow: 0 0 10px #0ff, 0 0 20px #f0f, 0 0 30px #0ff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.ui-footer {
+    position: fixed;
+    left: 40px;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.5rem;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    z-index: 20;
+    pointer-events: auto;
+}
+
+.ui-footer a {
+    text-shadow: 0 0 8px rgba(0,255,255,.6);
+}
+
+.ui-footer a:hover {
+    color: rgb(123, 189, 255);
+    text-shadow: 0 0 15px rgba(0,255,255,1);
+}
+
+.ui-separator {
+    opacity: 0.4;
+}
+
+.ui-footer i {
+    font-size: 1.2rem;
+}
+
+/* =========================
+   BREADCRUMB
+========================= */
+.breadcrumb {
+    position: fixed;
+    left: 40px;
+    top: 115px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    z-index: 20;
+    pointer-events: auto;
+}
+
+.breadcrumb-item {
+    color: rgba(255,255,255,0.5);
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.breadcrumb-item:hover {
+    color: rgb(123, 189, 255);
+    text-shadow: 0 0 10px rgba(0,255,255,0.6);
+}
+
+.breadcrumb-separator {
+    opacity: 0.3;
+    margin: 0 5px;
+}
+
+.breadcrumb-current {
+    color: rgb(237, 135, 237);
+    text-shadow: 0 0 8px rgba(255,0,255,0.4);
+}
+
+/* =========================
+   HORIZONTAL SCROLL
+========================= */
+.horizontal {
+    position: fixed;
+    inset: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1;
+}
+
+.horizontal::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal-inner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    padding: 0 15vw;
+}
+
+.scroll-indicator {
+    position: fixed;
+    right: 40px;
+    bottom: 5%;
+    font-size: 1rem;
+    color: white;
+    z-index: 20;
+    pointer-events: none;
+
+    animation: bounce 1s infinite alternate;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
+
+
+/* =========================
+   HERO
+========================= */
+.hero {
+    min-width: 75vw;
+    height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-family: 'Planet Kosmos', sans-serif;
+    font-size: 6rem;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #f0f, 0 0 30px #0ff;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: rgb(237, 135, 237);
+    text-shadow: 0 0 10px #f0f, 0 0 20px #0ff, 0 0 30px #f0f;
+}
+
+/* =========================
+   CARDS
+========================= */
+.card, .card-home {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(0,255,255,0.1);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px #0ff, 0 0 20px #f0f, 0 0 20px #0ff;
+    cursor: pointer;
+    transition: opacity 0.4s ease, filter 0.4s ease, transform 0.4s ease;
+}
+
+.card.is-dimmed {
+    opacity: 0.35;
+    filter: grayscale(50%);
+    transform: scale(0.8);
+}
+
+.card.is-active {
+    opacity: 1;
+    filter: none;
+    transform: scale(1);
+    box-shadow: 0 0 10px #f0f, 0 0 30px rgb(237, 135, 237);
+}
+
+.card.is-active img {
+    opacity: 0.8;
+}
+
+.card img, .card-home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+
+.card h2, .card-home h2 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 0 0 10px rgb(123, 189, 255);
+}
+
+.card h3 {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.9rem;
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    text-shadow: 0 0 8px rgb(123, 189, 255);
+}
+
+.card p {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    right: 15px;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 0 0 8px rgb(123, 189, 255);
+    line-height: 1.4;
+}
+
+/* Card Hover Effect */
+.card::before, .card-home::before {
+    content: '';
+    position: absolute;
+    inset: -50%;
+    background:
+        radial-gradient(circle at 30% 30%, rgb(123, 189, 255), transparent 40%),
+        radial-gradient(circle at 70% 70%, rgb(255, 141, 255), transparent 40%);
+    opacity: 0;
+    filter: blur(30px);
+    transition: opacity .4s ease;
+    z-index: 1;
+}
+
+.card:hover::before, .card-home:hover::before {
+    opacity: 1;
+    animation: liquid 4s linear infinite;
+}
+
+.card:hover img {
+    transform: scale(1.2);
+}
+
+@keyframes liquid {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

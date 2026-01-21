@@ -1,0 +1,11 @@
+#projets-container {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+@media (max-width: 768px) {
+    #projets-container {
+        gap: 50px;
+    }
+}
