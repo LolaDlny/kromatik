@@ -91,20 +91,89 @@ html, body {
 }
 
 /* =========================
-   RESPONSIVE
+   RESPONSIVE MOBILE
 ========================= */
 @media (max-width: 768px) {
-    .landing-header .logo {
-        font-size: 2rem;
+    html, body {
+        background-size: 20px 20px;
     }
+
+    .landing-frame {
+        padding: 60px 40px;
+        border: 2px solid white;
+    }
+
+    .logo img {
+        height: 120px;
+        margin-bottom: 15px;
+        margin-top: -10px;
+    }
+
     .hero-title {
         font-size: 2.5rem;
+        margin-bottom: 15px;
     }
+
     .hero-subtitle {
         font-size: 1rem;
+        margin-bottom: 30px;
     }
+
     .enter-button {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 12px 30px;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing-frame {
+        padding: 40px 25px;
+        margin: 0 20px;
+    }
+
+    .logo img {
+        height: 90px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+
+    .enter-button {
+        font-size: 0.8rem;
+        padding: 10px 25px;
+        letter-spacing: 1px;
+    }
+}
+
+/* Orientation paysage sur mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .landing-frame {
+        padding: 30px 50px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+
+    .enter-button {
+        font-size: 0.75rem;
+        padding: 8px 20px;
     }
 }

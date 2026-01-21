@@ -21,12 +21,72 @@
     text-shadow: 0 0 10px #f0f, 0 0 20px #0ff, 0 0 30px #f0f;
 }
 
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
 @media (max-width: 768px) {
+    .hero {
+        min-width: 90vw;
+        padding: 0 20px;
+    }
+
     .hero h1 {
         font-size: 2.8rem;
+        line-height: 1.2;
     }
     
     .hero .subtitle {
         font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    /* Cards home plus petites sur mobile */
+    .card-home {
+        width: 280px;
+        height: 380px;
+    }
+
+    .card-home h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-width: 95vw;
+        padding: 0 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 0.9rem;
+        margin-top: 12px;
+    }
+
+    /* Cards encore plus petites sur très petit mobile */
+    .card-home {
+        width: 240px;
+        height: 340px;
+    }
+
+    .card-home h2 {
+        font-size: 0.9rem;
+        bottom: 12px;
+        left: 12px;
+    }
+}
+
+/* Orientation paysage sur mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 0.85rem;
+        margin-top: 10px;
     }
 }

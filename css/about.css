@@ -113,3 +113,98 @@
 .cv-download:active {
     transform: translateY(0);
 }
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media (max-width: 768px) {
+    .apropos {
+        padding: 0 20px;
+        gap: 40px;
+    }
+
+    .apropos > h2 {
+        font-size: 1.5rem;
+        margin-top: 100px;
+        margin-bottom: -20px;
+    }
+
+    /* Grid devient vertical sur mobile */
+    .about {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 25px;
+        max-width: 100%;
+    }
+
+    .about #moi {
+        height: 300px;
+        width: 100%;
+    }
+
+    .about h2 {
+        grid-column: 1;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .about p {
+        grid-column: 1;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* Outils icons plus petits */
+    .outils-list {
+        gap: 15px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .outils {
+        width: 20%;
+        min-width: 50px;
+    }
+
+    /* Bouton CV */
+    .cv-download {
+        font-size: 0.7rem;
+        padding: 12px 25px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .apropos > h2 {
+        font-size: 1.2rem;
+    }
+
+    .about {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .about #moi {
+        height: 250px;
+    }
+
+    .about h2 {
+        font-size: 1.3rem;
+    }
+
+    .about p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    .outils {
+        width: 18%;
+        min-width: 45px;
+    }
+
+    .cv-download {
+        font-size: 0.65rem;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+    }
+}

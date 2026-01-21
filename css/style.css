@@ -339,3 +339,128 @@ a {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media (max-width: 768px) {
+    html, body {
+        background-size: 20px 20px;
+    }
+
+    /* Header mobile */
+    .site-header {
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .site-nav {
+        display: flex;
+        gap: 15px;
+    }
+
+    .site-nav a {
+        font-size: 0.75rem;
+        margin-left: 0;
+    }
+
+    /* Footer mobile */
+    .ui-footer {
+        left: 20px;
+        bottom: 10px;
+        font-size: 0.4rem;
+        gap: 8px;
+    }
+
+    /* Breadcrumb mobile */
+    .breadcrumb {
+        left: 20px;
+        top: 80px;
+        font-size: 0.55rem;
+    }
+
+    /* Scroll indicator mobile */
+    .scroll-indicator {
+        right: 20px;
+        font-size: 0.8rem;
+        bottom: 10%;
+    }
+
+    /* Hero mobile */
+    .hero {
+        min-width: 90vw;
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Cards mobile */
+    .track {
+        gap: 60px;
+    }
+
+    .card, .card-home {
+        width: 280px;
+        height: 380px;
+    }
+
+    .card h2, .card-home h2 {
+        font-size: 1rem;
+    }
+
+    .card h3 {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
+
+    .card p {
+        font-size: 0.7rem;
+        bottom: 35px;
+    }
+
+    /* Désactiver les effets hover sur mobile */
+    .card:hover::before, .card-home:hover::before {
+        opacity: 0;
+    }
+
+    .card:hover img {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small mobile */
+    .logo img {
+        height: 30px;
+    }
+
+    .site-nav a {
+        font-size: 0.65rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .card, .card-home {
+        width: 240px;
+        height: 340px;
+    }
+
+    .track {
+        gap: 40px;
+    }
+}

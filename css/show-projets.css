@@ -200,3 +200,143 @@
     text-shadow: 0 0 10px rgba(0,0,0,0.8);
     z-index: 10000;
 }
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media (max-width: 768px) {
+    /* Grid vertical sur mobile */
+    .project-card {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px;
+        width: 100vw;
+        height: auto;
+        min-height: 100vh;
+        margin-right: 0;
+        padding-top: 100px;
+    }
+
+    .project-cover {
+        order: 2;
+    }
+
+    .project-info {
+        order: 1;
+    }
+
+    .project-cover img {
+        max-height: 50vh;
+        width: 100%;
+    }
+
+    .project-info h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .project-info p {
+        font-size: 0.85rem;
+        margin-bottom: 25px;
+        max-width: 100%;
+    }
+
+    .project-tags, .project-tools {
+        font-size: 0.7rem;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .project-navigation {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .back-link {
+        font-size: 0.8rem;
+    }
+
+    /* Media grid 2 colonnes sur mobile */
+    .project-media {
+        width: 100vw;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 80px 20px 60px 20px;
+    }
+
+    /* Lightbox mobile */
+    .lightbox-close {
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+    }
+
+    .lightbox-arrow {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    .lightbox-arrow-left {
+        left: 10px;
+    }
+
+    .lightbox-arrow-right {
+        right: 10px;
+    }
+
+    .lightbox-counter {
+        bottom: 20px;
+        font-size: 0.9rem;
+    }
+
+    .lightbox-content img,
+    .lightbox-content video {
+        max-width: 95vw;
+        max-height: 85vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        padding: 15px;
+        padding-top: 90px;
+        gap: 20px;
+    }
+
+    .project-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .project-info p {
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    .project-tags, .project-tools {
+        font-size: 0.65rem;
+        gap: 8px;
+    }
+
+    .back-link {
+        font-size: 0.75rem;
+    }
+
+    .project-cover img {
+        max-height: 40vh;
+    }
+
+    .project-media {
+        gap: 10px;
+        padding: 80px 15px 50px 15px;
+    }
+
+    .lightbox-close {
+        font-size: 25px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .lightbox-arrow {
+        font-size: 1.5rem;
+    }
+}
