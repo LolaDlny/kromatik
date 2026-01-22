@@ -12,6 +12,15 @@
   src: url('../fonts/planet-kosmos.ttf'); /* url of the font */
 }
 
+:root {
+    color-scheme: dark;
+}
+
+html {
+    color-profile: sRGB;
+}
+
+
 html, body {
     width: 100%;
     height: 100%;

@@ -20,6 +20,15 @@ html, body {
     color: white;
 }
 
+:root {
+    color-scheme: dark;
+}
+
+html {
+    color-profile: sRGB;
+}
+
+
 /* =========================
    MAIN HERO
 ========================= */
