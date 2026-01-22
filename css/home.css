@@ -27,7 +27,8 @@
 @media (max-width: 768px) {
     .hero {
         min-width: 90vw;
-        padding: 0 20px;
+        padding: 0;
+        margin-left: -55px;
     }
 
     .hero h1 {

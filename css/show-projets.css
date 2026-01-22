@@ -216,7 +216,6 @@
     .project-media {
         width: 80vw;
         grid-template-columns: repeat(4, 1fr);
-        padding-top: 10vw;
     }
 
     .project-navigation {
@@ -280,7 +279,6 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 12px;
         padding: 0;
-        margin-top: 20px;
     }
 
     .ui-footer {
