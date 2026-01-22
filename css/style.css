@@ -12,12 +12,54 @@
   src: url('../fonts/planet-kosmos.ttf'); /* url of the font */
 }
 
-:root {
-    color-scheme: dark;
-}
-
-html {
-    color-profile: sRGB;
+@media screen and (color-gamut: p3) {
+    /* Safari avec Display P3 - on désature les couleurs */
+    
+    .hero h1,
+    .hero-title {
+        text-shadow: 0 0 10px color(srgb 0 1 1), 
+                     0 0 20px color(srgb 1 0 1), 
+                     0 0 30px color(srgb 0 1 1);
+    }
+    
+    .hero .subtitle,
+    .hero-subtitle,
+    .hero p {
+        text-shadow: 0 0 10px color(srgb 1 0 1), 
+                     0 0 20px color(srgb 0 1 1), 
+                     0 0 30px color(srgb 1 0 1);
+    }
+    
+    .apropos > h2,
+    .about h2,
+    .contact-title,
+    .project-info h1 {
+        text-shadow: 0 0 10px color(srgb 1 0 1);
+    }
+    
+    .form-label {
+        text-shadow: 0 0 5px color(srgb 1 0 1);
+    }
+    
+    .site-nav a {
+        text-shadow: 0 0 10px color(srgb 1 0 1), 
+                     0 0 20px color(srgb 0 1 1), 
+                     0 0 30px color(srgb 1 0 1);
+    }
+    
+    .site-nav a:hover {
+        text-shadow: 0 0 10px color(srgb 0 1 1), 
+                     0 0 20px color(srgb 1 0 1), 
+                     0 0 30px color(srgb 0 1 1);
+    }
+    
+    .back-link {
+        text-shadow: 0 0 10px color(srgb 0 1 1);
+    }
+    
+    .back-link:hover {
+        text-shadow: 0 0 20px color(srgb 1 0 1);
+    }
 }
 
 
